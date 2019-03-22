@@ -1,2 +1,7 @@
 const withTypescript = require('@zeit/next-typescript')
-module.exports = withTypescript()
+
+const config = {
+  distDir: '../dist'
+}
+
+module.exports = withTypescript(config)
