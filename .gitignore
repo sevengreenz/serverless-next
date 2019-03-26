@@ -1,5 +1,7 @@
 dist
 node_modules
+/.serverless
+yarn-error.log
 *.swp
 .DS_Store
 npm-debug.log
