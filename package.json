@@ -6,6 +6,7 @@
     "offline": "yarn build && serverless offline",
     "build": "next build ./src && tsc -p tsconfig.server.json",
     "start": "next start ./src",
+    "deploy": "yarn build && serverless deploy",
     "type-check": "tsc ./src"
   },
   "dependencies": {
