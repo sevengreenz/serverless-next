@@ -12,7 +12,7 @@ const createApp = (): express.Express => {
   app.get('*', (req, res) => handle(req, res));
 
   return app;
-}
+};
 
 const app = createApp();
 

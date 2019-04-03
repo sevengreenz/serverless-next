@@ -1,0 +1,31 @@
+{
+  "extends": [
+    "tslint-config-airbnb",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "rulesDirectory": [
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier": [
+      true,
+      {
+        "singleQuote": true,
+        "printWidth": 150
+      }
+    ],
+    // TSLint
+    "max-file-line-count": [
+      true,
+      300
+    ],
+    "variable-name": false,
+    "strict-boolean-expressions": false,
+    "no-parameter-properties": true,
+    // tslint-config-airbnb
+    "import-name": false,
+    "object-shorthand-properties-first": false
+    // tslint-react
+  }
+}
