@@ -10,7 +10,7 @@
   },
   "files": [
     "src/lambda.ts",
-    "src/app.ts",
+    "src/server.ts",
   ],
   "exclude": [
     "node_modules"
