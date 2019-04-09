@@ -4,6 +4,7 @@ import Layout from '../components/Layout';
 import IDataObject from '../interfaces';
 import { findData } from '../utils/sample-api';
 import ListDetail from '../components/ListDetail';
+import { Span } from 'src/styles/Common';
 
 type RequestQuery = {
   id: string;
@@ -31,7 +32,7 @@ class ListDetailPage extends React.Component<Props> {
       return (
         <Layout title={`Error | Next.js + TypeScript Example`}>
           <p>
-            <span style={{ color: 'red' }}>Error:</span> {errors}
+            <Span color="error">Error:</Span> {errors}
           </p>
         </Layout>
       );
