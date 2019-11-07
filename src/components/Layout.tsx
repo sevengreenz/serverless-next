@@ -2,8 +2,8 @@ import * as React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
-import Theme from 'src/styles/Theme';
-import { HeaderNav } from 'src/styles/Header';
+import Theme from '../styles/Theme';
+import { HeaderNav } from '../styles/Header';
 
 type Props = {
   title?: string;

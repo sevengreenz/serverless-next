@@ -1,5 +1,3 @@
-const withTypescript = require('@zeit/next-typescript')
-
 const config = {
   distDir: '../dist',
   webpack(config, options) {
@@ -8,4 +6,4 @@ const config = {
   }
 }
 
-module.exports = withTypescript(config)
+module.exports = config

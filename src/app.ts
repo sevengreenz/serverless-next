@@ -1,5 +1,5 @@
-import * as express from 'express';
-import * as next from 'next';
+import express from 'express';
+import next from 'next';
 
 const appNext = next({ dir: './src', dev: false });
 const handle = appNext.getRequestHandler();

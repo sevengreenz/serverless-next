@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "fmt": "tslint -c tslint.json --project tsconfig.json --fix 'src/**/*.{ts,tsx}'",
+    "next": "next src",
     "dev": "nodemon",
     "offline": "yarn build && serverless offline",
     "build": "next build ./src && tsc -p tsconfig.server.json",
@@ -11,11 +12,10 @@
     "type-check": "tsc ./src"
   },
   "dependencies": {
-    "@zeit/next-typescript": "^1.1.1",
     "aws-lambda": "^0.1.2",
     "aws-serverless-express": "^3.3.6",
     "express": "^4.16.4",
-    "next": "^8.0.4",
+    "next": "^9.1.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "styled-components": "^4.2.0"
@@ -23,22 +23,21 @@
   "devDependencies": {
     "@types/aws-serverless-express": "^3.3.0",
     "@types/express": "^4.16.1",
-    "@types/next": "^8.0.3",
     "@types/react": "^16.8.10",
-    "@types/react-dom": "16.8.3",
+    "@types/react-dom": "16.9.3",
     "@types/styled-components": "^4.1.14",
     "babel-plugin-styled-components": "^1.10.0",
     "nodemon": "^1.18.10",
     "prettier": "^1.16.4",
     "serverless": "^1.40.0",
-    "serverless-offline": "^4.9.3",
+    "serverless-offline": "^5.12.0",
     "ts-node": "^8.0.3",
-    "tslint": "^5.15.0",
+    "tslint": "^6.0.0-beta0",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.0.1",
     "tslint-react": "^4.0.0",
-    "typescript": "3.4.1"
+    "typescript": "3.6.4"
   },
   "license": "ISC"
 }

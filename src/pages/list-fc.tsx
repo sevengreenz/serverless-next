@@ -1,4 +1,4 @@
-import { NextFunctionComponent, NextContext } from 'next';
+import { NextPage } from 'next';
 import Link from 'next/link';
 
 import Layout from '../components/Layout';
@@ -11,7 +11,7 @@ type Props = {
   pathname: string;
 };
 
-const ListFunction: NextFunctionComponent<Props> = ({ items, pathname }) => (
+const ListFunction: NextPage<Props> = ({ items, pathname }) => (
   <Layout title="List Example (as Functional Component) | Next.js + TypeScript Example">
     <h1>List Example (as Function Component)</h1>
     <p>You are currently on: {pathname}</p>
@@ -24,7 +24,7 @@ const ListFunction: NextFunctionComponent<Props> = ({ items, pathname }) => (
   </Layout>
 );
 
-ListFunction.getInitialProps = async ({ pathname }: NextContext) => {
+ListFunction.getInitialProps = async ({ pathname }) => {
   // Example for including initial props in a Next.js function compnent page.
   // Don't forget to include the respective types for any props passed into
   // the component.
