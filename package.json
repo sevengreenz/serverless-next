@@ -14,7 +14,7 @@
   "dependencies": {
     "aws-lambda": "^0.1.2",
     "aws-serverless-express": "^3.3.6",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "next": "^9.1.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
